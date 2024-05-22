@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<html>
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8" />
+    <title>FIT1050 Web Fundamentals - Week 10</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="core_style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Jersey+10+Charted&family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images/nunawading_logo.svg" alt="logo" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Catalouge
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                News
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <div class="cs-social">
+                    <a href="https://www.facebook.com/p/Nunawading-Birds-and-Pets-100057462977544/"
+                        class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="scripts/navbar.js"></script>
+
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <section id="hero-1785">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Oldest Running Bird Business in Australia</span>
+                <h1 class="cs-title">Nunawading Birds & Pets</h1>
+                <p class="cs-text">
+                    Been in business since 1956
+                </p>
+                <div class="cs-button-group">
+                    <a href="" class="cs-button-solid cs-button1">Visit Our Store</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source srcset="images/budgie_banner.jpg">
+            <img loading="lazy" decoding="async" src="images/budgie_banner.jpg" alt="field" width="1920" height="1200"
+                aria-hidden="true">
+        </picture>
+        <img class="cs-graphic" src="images/banner_transition.png" alt="graphic" loading="lazy" decoding="async">
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+    <section id="cta-51">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cs-container">
+                        <div class="cs-content">
+                            <span class="cs-topper">Beware when purchasing Cockatoos and Galahs</span>
+                            <h2 class="cs-title">BEWARE OF BIRD DISEASES</h2>
+                            <a href="" class="cs-button-solid">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Background Image-->
+                    <picture class="cs-picture">
+                        <source srcset="images/bird_disease.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920"
+                            height="1280" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cs-container">
+                        <div class="cs-content">
+                            <span class="cs-topper">Going on Holiday?</span>
+                            <h2 class="cs-title">WE OFFER BIRD BOARDING</h2>
+                            <a href="" class="cs-button-solid">Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- Background Image-->
+                    <picture class="cs-picture">
+                        <source srcset="images/beach.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920"
+                            height="1280" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="scripts/slide_swiper.js"></script>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Collection                  -->
+    <!-- ============================================ -->
+
+    <!--
+    To add a 4th or 5th collection or more, copy and paste the cs-button and change it's data-filter to the next number, in this case it's 4. Do the same to the cs-listing and its data-category number. And that's it!
+    -->
+    <section id="collection-1602">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Featured Items</h2>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        New Arrival
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Top Rating
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Best Seller
+                    </button>
+                </div>
+            </div>
+            <div class="cs-listing-wrapper">
+                <!--Listing 1-->
+                <div class="cs-listing" data-category="one">
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img class="cs-basket"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Oversized Alpaca Crew</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Diesel V2 Hoodie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-round-neck.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-round-neck.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-round-neck.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Round neck T-shirt</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-halter.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-halter.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-halter.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Crossback Halter Dress</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--Listing 2-->
+                <div class="cs-listing cs-hidden" data-category="two">
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-beanie.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img class="cs-basket"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-alpaca.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Oversized Alpaca Crew</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-hoodie.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Diesel V2 Hoodie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cs-item">
+                        <a href="" class="cs-link">
+                            <div class="cs-picture-group">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png">
+                                    <source media="(min-width: 601px)"
+                                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png">
+                                    <img loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-winter.png"
+                                        alt="gallery" width="305" height="400">
+                                </picture>
+                                <span class="cs-offer">-20%</span>
+                            </div>
+                            <div class="cs-details">
+                                <span class="cs-category">Run, Dress</span>
+                                <h3 class="cs-name">Blue Chunky Beanie</h3>
+                                <div class="cs-actions">
+                                    <div class="cs-flex">
+                                        <span class="cs-price">$7.00</span>
+                                        <span class="cs-was-price">$12.00</span>
+                                        <div class="cs-stars">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                    <button class="cs-buy">
+                                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/product_collection.js"></script>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+    <section id="services-1628">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">A little bit</span>
+                    <h2 class="cs-title">About Us</h2>
+                </div>
+                <div class="cs-text">
+                    <p class="cs-text-area">
+                        Nunawading Birds & Pets is your one stop shop for all your bird and pet needs. We are the oldest
+                        running bird business in Australia, having been in business since 1956. We specialise in a huge
+                        range of pet birds, aviary birds, rabbits and guinea pigs.
+
+                        We also have a great range of pet supplies including food, products and accessories, bulk seed
+                        and
+                        speciality mixes.
+                    </p>
+                    <span class="cs-fake-link">
+                        Learn more
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg"
+                            alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="images/parakeet_card_image.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="images/parakeet_card_image.jpg">
+                            <img loading="lazy" decoding="async" src="images/parakeet_card_image.jpg"
+                                alt="yellow parakeet" width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Pet Birds</h3>
+                        <p class="cs-item-text">
+                            Unlike aviary birds, pet birds are usually not in the cage all the time as they love human
+                            contact. Talk to us and we will be able to assist you in selecting "the special bird" that
+                            suits your personality.
+                        </p>
+                        <span class="cs-fake-link">
+                            Find the right bird
+                            <img class="cs-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg"
+                                alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="images/galah_card_image.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="images/galah_card_image.jpg">
+                            <img loading="lazy" decoding="async" src="images/galah_card_image.jpg" alt="room"
+                                width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Aviary Birds</h3>
+                        <p class="cs-item-text">
+                            We only sell aviary bred and hand reared cockatoos and galahs.
+                            Please be very wary when purchasing baby cockies and galahs. No trapped birds sold.
+                            Please note that due to climate differences between states we do not import lifestock.
+                        </p>
+                        <span class="cs-fake-link">
+                            Find the right bird
+                            <img class="cs-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg"
+                                alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async"
+                        src="images/nunawading_logo.svg" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    Copyright © 2024 - Nunawading Birds and Pets
+                </p>
+            </div>
+            <!-- Trading Hours -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Trading Hours</span>
+                </li>
+                <li class="trade-text">
+                    OPEN 7 DAYS A WEEK
+                </li>
+                <li class="trade-text">
+                    Monday-Sunday
+                </li>
+                <li class="trade-text">
+                    9.30 AM - 5.00 PM
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Our Contact Details</span>
+                </li>
+                <li class="cs-contact-li">
+                    <div class="cs-contact-link-header">Telp:</div>
+                    <a class="cs-contact-link" href="tel: 123-456-7890">03 9874 3394</a>
+                </li>
+                <li class="cs-contact-li">
+                    <div class="cs-contact-link-header">Web:</div>
+                    <a class="cs-contact-link" href="http://www.nunawadingbirds.com.au/">
+                        nunawadingbirds.com.au</a>
+                </li>
+                <li class="cs-contact-li">
+                    <div class="cs-contact-link-header">Address:</div>
+                    <a class="cs-contact-link"
+                        href="https://www.google.com/maps/place/Nunawading+Birds+%26+Pets/@-37.815735,145.1768029,15z/data=!4m2!3m1!1s0x0:0x5b3ec35a9f1942d4?sa=X&ved=1t:2428&ictx=111">
+                        <p>101 Springvale Rd</p>
+                        <p>Nunawading</p>
+                        <p>VIC 3131</p>
+                    </a>
+                </li>
+                <li class="cs-nav-link">
+                    <a href="https://www.tradingpost.com.au/Search/Advanced-Result?HotlistID=X6_13076">Visit us on
+                        tradingpost.com.au</a>
+                </li>
+                <!-- Social Media -->
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google"
+                                width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile"
+                            href="https://www.facebook.com/p/Nunawading-Birds-and-Pets-100057462977544/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook"
+                                width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg"
+                                alt="twitter" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

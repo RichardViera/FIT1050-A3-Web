@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1200"
+   height="400"
+   viewBox="0 0 1200 400"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="nunawading_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.56416667"
+     inkscape:cx="336.77991"
+     inkscape:cy="366.02659"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <rect
+       x="532.68018"
+       y="159.17735"
+       width="629.18927"
+       height="194.27158"
+       id="rect14" />
+    <rect
+       x="555.24072"
+       y="144.13698"
+       width="456.22488"
+       height="302.06097"
+       id="rect11" />
+    <rect
+       x="596.60175"
+       y="165.44418"
+       width="486.30563"
+       height="269.47348"
+       id="rect10" />
+    <rect
+       x="532.68018"
+       y="159.17735"
+       width="646.36932"
+       height="153.53255"
+       id="rect14-8" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.92068006,0,0,0.92320888,-19.563246,38.113936)">
+    <path
+       id="path4"
+       style="fill:#ffffff;stroke-width:0.819665"
+       d="M 259.90711,2.2161491 A 150.38667,146.01834 0 0 0 109.52039,148.23373 150.38667,146.01834 0 0 0 259.90711,294.25326 150.38667,146.01834 0 0 0 410.29383,148.23373 150.38667,146.01834 0 0 0 259.90711,2.2161491 Z m 8.3125,58.2753899 a 31.462334,31.462334 0 0 1 33.30664,28.80078 l 0.10938,2.60157 a 31.462334,31.462334 0 0 1 -30.8125,31.455071 31.462334,31.462334 0 0 1 -32.08594,-30.152341 31.462334,31.462334 0 0 1 29.48242,-32.70508 z" />
+    <path
+       style="fill:#ffffff"
+       d="M 115.39996,104.56828 47.718248,371.53504 441.27487,365.26821 383.62008,176.01009 Z"
+       id="path5" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     transform="matrix(0.92068006,0,0,0.92320888,-19.563246,38.113936)">
+    <text
+       xml:space="preserve"
+       id="text14"
+       style="font-size:120px;white-space:pre;shape-inside:url(#rect14);fill:#808080"
+       transform="matrix(1.2741441,0,0,1.5255747,-167.58989,-211.14888)"><tspan
+         x="532.67969"
+         y="269.45117"
+         id="tspan6"><tspan
+           style="font-weight:bold;font-stretch:semi-condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Semi-Condensed';fill:#ffffff"
+           id="tspan5">NUNAWADING</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text14-7"
+       style="font-size:120px;white-space:pre;shape-inside:url(#rect14-8);fill:#808080"
+       transform="matrix(1.2741441,0,0,1.5255747,-208.42229,-58.512811)"><tspan
+         x="532.67969"
+         y="269.45117"
+         id="tspan8"><tspan
+           style="font-weight:bold;font-stretch:semi-condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Semi-Condensed';fill:#ffffff"
+           id="tspan7">BIRDS &amp; PETS</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="matrix(0.92068006,0,0,0.92320888,-19.563246,38.113936)">
+    <path
+       id="path6"
+       style="fill:#ffffff"
+       d="m 389.37391,32.956389 a 103.69276,94.830132 0 0 0 -103.69141,94.830071 103.69276,94.830132 0 0 0 43.79297,77.14844 92.749016,56.401428 0 0 1 -2.38281,-12.21875 92.749016,56.401428 0 0 1 92.75,-56.40234 92.749016,56.401428 0 0 1 68.8457,18.6289 103.69276,94.830132 0 0 0 4.37891,-27.15625 103.69276,94.830132 0 0 0 -103.69336,-94.830071 z" />
+  </g>
+</svg>
