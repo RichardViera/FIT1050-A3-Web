@@ -1287,6 +1287,7 @@
     height: 91%;
     width: 80%;
     object-fit: cover;
+    box-shadow: #171e0fcf 0 12px 20px;
   }
 }
 

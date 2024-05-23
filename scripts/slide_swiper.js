@@ -6,7 +6,7 @@ const swiper = new Swiper('#cta-51 .swiper', {
     duration: 350,
     loop: true,
     fade: true,
-    effect: 'cube',
+    
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
