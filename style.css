@@ -1154,7 +1154,6 @@
   #cta-51 {
     margin-top: 3rem;
     width: 100%;
-    padding: 4rem;
   }
 
   #cta-51 .swiper-pagination-bullet-active {
@@ -1163,6 +1162,12 @@
 
   #cta-51 .swiper-button-next {
     color: var(--primary);
+    margin-right: 3rem;
+  }
+
+  #cta-51 .swiper-button-prev {
+    color: var(--primary);
+    margin-left: 3rem;
   }
 
   #cta-51 .swiper-button-prev:hover {
@@ -1173,14 +1178,9 @@
     color: var(--primaryLight);
   }
 
-  #cta-51 .swiper-button-prev {
-    color: var(--primary);
-  }
-
   #cta-51 .swiper-slide {
     height: 30rem;
     display: flex;
-    width: 80%;
   }
 
   #cta-51 .cs-container {
@@ -1272,20 +1272,20 @@
     position: absolute;
     display: block;
     height: 91%;
-    width: 85%;
+    width: 80%;
     background: #000;
     opacity: 0.5;
     top: 0;
-    left: 7.5%;
+    left: 10%;
     z-index: 1;
   }
 
   #cta-51 .cs-picture img {
     position: absolute;
     top: 0;
-    left: 7.5%;
+    left: 10%;
     height: 91%;
-    width: 85%;
+    width: 80%;
     object-fit: cover;
   }
 }
