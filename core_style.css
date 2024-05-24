@@ -37,7 +37,7 @@ body {
   text-align: inherit;
   letter-spacing: .1em;
   font-weight: 700;
-  color: var(--primaryLight);
+  color: var(--primary);
   text-shadow: rgb(225, 255, 0) 1px 0 10px;
   margin-bottom: 0.25rem;
   display: block;
