@@ -1,41 +1,25 @@
-class GalleryFilter {
-    filtersSelector = ".cs-button";
-    imagesSelector = ".cs-listing";
-    activeClass = "cs-active";
-    hiddenClass = "cs-hidden";
+$('.cs-button').click(filterItems);
 
-    constructor() {
-        const $filters = document.querySelectorAll(this.filtersSelector);
-        this.$activeFilter = $filters[0];
-        this.$images = document.querySelectorAll(this.imagesSelector);
-
-        this.$activeFilter.classList.add(this.activeClass);
-
-        for (const $filter of $filters) {
-            $filter.addEventListener("click", () => this.onClick($filter));
-        }
-    }
-
-    onClick($filter) {
-        this.filter($filter.dataset.filter);
-
-        const { activeClass } = this;
-
-        this.$activeFilter.classList.remove(activeClass);
-        $filter.classList.add(activeClass);
-
-        this.$activeFilter = $filter;
-    }
-
-    filter(filter) {
-        const showAll = filter == "all";
-        const { hiddenClass } = this;
-
-        for (const $image of this.$images) {
-            const show = showAll || $image.dataset.category == filter;
-            $image.classList.toggle(hiddenClass, !show);
-        }
-    }
+function filterItems() {
+    let button = this;
+    let selector = $(button).data('filter');
+    $('#collection-1602 .cs-listing .cs-item').not(selector).hide(500);
+    $(selector).show(500);
 }
 
-new GalleryFilter();
+const product_swiper = new Swiper('#collection-1602 .swiper', {
+
+    speed: 1100,
+    slidesPerView: 4,
+    spaceBetween: 0,
+    autoplay: true,
+    duration: 350,
+    loop: true,
+    fade: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

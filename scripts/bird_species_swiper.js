@@ -1,4 +1,4 @@
-const swiper2 = new Swiper('#collection-1577 .swiper', {
+const species_swiper = new Swiper('#collection-1577 .swiper', {
 
     speed: 1100,
     slidesPerView: 4,

@@ -1,4 +1,4 @@
-const swiper = new Swiper('#cta-51 .swiper', {
+const cta_swiper = new Swiper('#cta-51 .swiper', {
 
     speed: 1100,
     spaceBetween: 0,
@@ -6,7 +6,7 @@ const swiper = new Swiper('#cta-51 .swiper', {
     duration: 350,
     loop: true,
     fade: true,
-    
+
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',

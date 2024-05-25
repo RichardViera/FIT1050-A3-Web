@@ -1388,7 +1388,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    display: grid;
+    display: flex;
     justify-items: center;
     grid-auto-flow: row;
     /* 16px - 20px */
@@ -1399,32 +1399,6 @@
     transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
     /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
     transform-origin: left top;
-  }
-
-  #collection-1602 .cs-listing.cs-hidden {
-    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
-    opacity: 0;
-    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
-    visibility: hidden;
-    position: absolute;
-    /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the top:0 value, the gallery won't go past that position when it animates */
-    top: 0;
-    left: 0;
-    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
-    transform: scaleY(0) scaleX(0);
-    /* prevents the mouse from interacting with it */
-    pointer-events: none;
-  }
-
-  #collection-1602 .cs-listing.cs-hidden .cs-image {
-    opacity: 0;
-    /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
-    transform: translateY(2.1875rem) rotateX(90deg);
-  }
-
-  #collection-1602 .cs-listing.cs-hidden .cs-item {
-    transform: rotateY(180deg);
-    opacity: 0;
   }
 
   #collection-1602 .cs-item {
