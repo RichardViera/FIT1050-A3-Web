@@ -908,7 +908,7 @@
   }
 
   #hero-1785 .cs-topper {
-    color:var(--primaryLight);
+    color: var(--primaryLight);
   }
 }
 
@@ -1633,13 +1633,16 @@
   #collection-1577 {
     padding: var(--sectionPadding);
     padding-top: 1rem;
+    padding-bottom: 1rem;
     position: relative;
     z-index: 1;
   }
+
   #collection-1577 .swiper-scrollbar {
     background-color: var(--primary);
     height: 0.5rem;
   }
+
   #collection-1577 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -1650,6 +1653,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
+
   #collection-1577 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
@@ -1659,9 +1663,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+
   #collection-1577 .cs-title {
     margin: 0;
   }
+
   #collection-1577 .cs-card-group {
     list-style: none;
     width: 100%;
@@ -1670,14 +1676,17 @@
     margin: auto;
     padding: 0;
   }
+
   #collection-1577 .cs-item {
     max-width: 100%;
     position: relative;
   }
+
   #collection-1577 .cs-item:hover .cs-background img {
     opacity: .5;
     transform: scale(1.4);
   }
+
   #collection-1577 .cs-link {
     text-decoration: none;
     /* changes at tablet */
@@ -1691,6 +1700,7 @@
     justify-content: center;
     align-items: center;
   }
+
   #collection-1577 .cs-background {
     width: 100%;
     height: 100%;
@@ -1703,12 +1713,14 @@
     z-index: -2;
     height: 93%;
   }
+
   #collection-1577 .cs-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform .6s, opacity .3s;
   }
+
   #collection-1577 .cs-category {
     font-size: 1.25rem;
     font-weight: 700;
@@ -1723,12 +1735,15 @@
     transition: color .3s;
     /* blurred background - done as a pseudo element so backdrop-filter won't distort the text */
   }
+
   #collection-1577 .cs-category:hover {
     color: var(--primary);
   }
+
   #collection-1577 .cs-category:hover:before {
     background-color: var(--headerColor);
   }
+
   #collection-1577 .cs-category:before {
     content: "";
     width: 100%;
@@ -1743,12 +1758,14 @@
     transition: background-color 0.3s;
   }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #collection-1577 .cs-card-group {
     max-width: 80rem;
     grid-template-columns: repeat(12, 1fr);
   }
+
   #collection-1577 .cs-item {
     /* 180px - 348px */
     height: clamp(11.75rem, 25vw, 21.75rem);
