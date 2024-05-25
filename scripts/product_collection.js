@@ -17,8 +17,10 @@ const product_swiper = new Swiper('#collection-1602 .swiper', {
 function filterItems() {
     let button = this;
     let selector = $(button).data('filter')
-    $('#collection-1602 .cs-listing .cs-item').not(selector).hide(500)
-    $(selector).show(500);
+    $('#collection-1602 .cs-item').not(selector).hide(500)
+    $(selector).show(500)
+    $(button).addClass('cs-button-hover-permanent')
+    $('#collection-1602 .cs-button').not(button).removeClass('cs-button-hover-permanent')
 }
 
 $('#collection-1602 .cs-button').click(filterItems);

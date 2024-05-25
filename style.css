@@ -1395,6 +1395,10 @@
     cursor: pointer;
   }
 
+  #collection-1602 .cs-button-hover-permanent {
+    color: var(--primary);
+  }
+
   #collection-1602 .cs-button:hover:before {
     width: 100%;
   }
