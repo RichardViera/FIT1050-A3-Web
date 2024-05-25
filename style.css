@@ -1298,6 +1298,7 @@
 @media only screen and (min-width: 0rem) {
   #collection-1602 {
     padding: var(--sectionPadding);
+    padding-bottom: 4rem;
   }
 
   #collection-1602 .cs-container {
@@ -1308,9 +1309,37 @@
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: 1.5rem;
     position: relative;
     z-index: 1;
+  }
+
+  #collection-1602 .swiper-button-next {
+    background-color: var(--primary);
+    box-shadow: rgba(59, 60, 57, 0.748) 0 6px 5px;
+    color: var(--headerColor);
+    padding: 2rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+  }
+
+  #collection-1602 .swiper-button-next:hover {
+    background-color: var(--primaryLight);
+  }
+
+  #collection-1602 .swiper-button-prev {
+    background-color: var(--primary);
+    box-shadow: rgba(59, 60, 57, 0.748) 0 6px 5px;
+    color: var(--headerColor);
+    padding: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+  }
+
+  #collection-1602 .swiper-button-prev:hover {
+    background-color: var(--primaryLight);
   }
 
   #collection-1602 .cs-content {
@@ -1333,7 +1362,7 @@
     justify-content: center;
     flex-wrap: wrap;
     /* 16px - 32px */
-    gap: clamp(1rem, 4vw, 2rem);
+    gap: 1rem;
   }
 
   #collection-1602 .cs-button {
@@ -1386,8 +1415,9 @@
 
   #collection-1602 .cs-listing {
     width: 100%;
+    height: auto;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     display: flex;
     justify-items: center;
     grid-auto-flow: row;
@@ -1403,7 +1433,7 @@
 
   #collection-1602 .cs-item {
     width: 100%;
-    box-shadow: rgba(59, 60, 57, 0.434) 0 0 10px;
+    box-shadow: rgba(59, 60, 57, 0.434) 0 0 5px;
     border-radius: 20px;
     max-width: 16rem;
     /* overwrites the default 'min-width: auto' value, keeping all grid items the same width no matter what*/
@@ -1413,6 +1443,7 @@
     border: 1px solid #e8e8e8;
     transform: rotateY(0);
     transition: transform 0.7s, opacity 0.3s;
+    overflow: hidden;
   }
 
   #collection-1602 .cs-item:nth-of-type(1) {
