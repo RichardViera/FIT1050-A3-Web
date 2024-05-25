@@ -1632,8 +1632,13 @@
 @media only screen and (min-width: 0rem) {
   #collection-1577 {
     padding: var(--sectionPadding);
+    padding-top: 1rem;
     position: relative;
     z-index: 1;
+  }
+  #collection-1577 .swiper-scrollbar {
+    background-color: var(--primary);
+    height: 0.5rem;
   }
   #collection-1577 .cs-container {
     width: 100%;
@@ -1664,12 +1669,9 @@
     max-width: 34.375rem;
     margin: auto;
     padding: 0;
-    display: grid;
-    grid-auto-flow: row;
   }
   #collection-1577 .cs-item {
     max-width: 100%;
-    grid-column: span 12;
     position: relative;
   }
   #collection-1577 .cs-item:hover .cs-background img {
@@ -1699,6 +1701,7 @@
     left: 0;
     /* set to -2 so the gradient overlay (z-index: -1) appears in front of the images, but behind the text */
     z-index: -2;
+    height: 93%;
   }
   #collection-1577 .cs-background img {
     width: 100%;
