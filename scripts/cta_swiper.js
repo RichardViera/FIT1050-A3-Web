@@ -17,4 +17,8 @@ const cta_swiper = new Swiper('#cta-51 .swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    keyboard: {
+        enabled: true,
+    }
 });

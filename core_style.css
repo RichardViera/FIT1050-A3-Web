@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'comfortaa';
-  background-color: #EFF4D8;
+  background-color: var(--headerColor);
 }
 
 *,

@@ -10,5 +10,9 @@ const species_swiper = new Swiper('#collection-1577 .swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
+    },
+
+    keyboard: {
+        enabled: true,
     }
 });

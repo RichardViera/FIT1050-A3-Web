@@ -912,14 +912,6 @@
   }
 }
 
-/* Large Desktop - 1920px */
-@media only screen and (min-width: 120rem) {
-  #hero-1785 {
-    /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get clsoer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
-    padding-bottom: 14vw;
-  }
-}
-
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/

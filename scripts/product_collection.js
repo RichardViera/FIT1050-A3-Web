@@ -11,6 +11,10 @@ const product_swiper = new Swiper('#collection-1602 .swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    keyboard: {
+        enabled: true,
+    }
 });
 
 $('#collection-1602 .cs-button').click(filterItems);
