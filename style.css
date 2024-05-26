@@ -1338,6 +1338,12 @@
     font-weight: 600;
   }
 
+  #collection-1602 .swiper-button-disabled {
+    background: None;
+    color: None;
+    box-shadow: None;
+  }
+
   #collection-1602 .swiper-button-prev:hover {
     background-color: var(--primaryLight);
   }
@@ -1353,7 +1359,7 @@
 
   #collection-1602 .cs-title {
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
 
   #collection-1602 .cs-button-group {

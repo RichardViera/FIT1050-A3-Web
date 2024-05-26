@@ -3,7 +3,6 @@ const product_swiper = new Swiper('#collection-1602 .swiper', {
     speed: 1100,
     slidesPerView: 4,
     spaceBetween: 1,
-    rewind: true,
     fade: true,
     loopAdditionalSlides: 4,
 
@@ -14,6 +13,10 @@ const product_swiper = new Swiper('#collection-1602 .swiper', {
     },
 });
 
+$('#collection-1602 .cs-button').click(filterItems);
+$('#collection-1602 .swiper').ready(hideButtons)
+$('#collection-1602 .swiper').hover(showButtons, hideButtons)
+
 function filterItems() {
     let button = this;
     let selector = $(button).data('filter')
@@ -22,10 +25,6 @@ function filterItems() {
     $(button).addClass('cs-button-hover-permanent')
     $('#collection-1602 .cs-button').not(button).removeClass('cs-button-hover-permanent')
 }
-
-$('#collection-1602 .cs-button').click(filterItems);
-$('#collection-1602 .swiper-wrapper').ready(hideButtons)
-$('#collection-1602 .swiper').hover(showButtons, hideButtons)
 
 function showButtons() {
     $('#collection-1602 .swiper-button-prev').show(100)
